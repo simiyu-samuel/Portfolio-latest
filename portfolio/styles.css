@@ -1,0 +1,66 @@
+body {
+  padding-top: 70px;
+}
+
+.jumbotron {
+  background-image: url("home.jpeg"); /* Replace with your background image */
+  background-size: cover;
+  color: white;
+  height: 80vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transform: scale(1.1);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.jumbotron.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+.award-box {
+  transition: transform 0.3s;
+}
+
+.award-box:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+h2 {
+  color: #343a40; /* Dark text for headings */
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+@keyframes backgroundAnimation {
+  0% {
+    background-color: rgba(0, 123, 255, 0.8);
+  }
+  50% {
+    background-color: rgba(0, 123, 255, 1);
+  }
+  100% {
+    background-color: rgba(0, 123, 255, 0.8);
+  }
+}
+
+.jumbotron {
+  animation: backgroundAnimation 5s infinite alternate;
+}
+.row {
+  row-gap: 30px;
+  flex-wrap: wrap;
+}
