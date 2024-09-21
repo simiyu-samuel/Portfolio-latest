@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samuel Simiyu - Full-Stack Developer Portfolio</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f8fb36d9f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="index.html">Samuel Simiyu</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#awards">Awards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <header
+      id="hero"
+      class="text-white text-center d-flex justify-content-center align-items-center"
+    >
+      <div class="hero-content">
+        <h1 class="display-4">Samuel Simiyu</h1>
+        <h2 class="lead">
+          Full-Stack Software Developer | Problem Solver | Innovator
+        </h2>
+        <a href="#projects" class="btn btn-dark btn-lg mt-4">View My Work</a>
+      </div>
+    </header>
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img
+            src="img/profile.jpeg"
+            alt="Samuel Simiyu"
+            class="img-fluid rounded-circle mb-4 mt-5"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2>About Me</h2>
+          <p>
+            I am a passionate Full-Stack Software Developer with expertise in
+            building responsive websites, mobile applications, and solving
+            complex back-end challenges.
+          </p>
+          <a href="#contact" class="btn btn-dark btn-lg">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="container">
+      <h2>Professional Experience</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Software Engineer</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                Icore Information Systems Ltd
+              </h6>
+              <p class="card-text">
+                Developed scalable backend systems using PHP and Laravel.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Web Master</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Beyond Technology</h6>
+              <p class="card-text">
+                Managed website maintenance and performance optimization.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Web Developer</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Freelance</h6>
+              <p class="card-text">
+                Designed and developed responsive, visually appealing websites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container">
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="project-card">
+            <img src="img/ihotel.PNG" alt="Project 1" class="project-img" />
+            <h3>Frontend Hotel Management System</h3>
+            <p>Brief description of the project goes here.</p>
+            <div class="tech">
+              <span><i class="fa-brands fa-html5 html"></i> HTML</span>
+              <span><i class="fa-brands fa-css3-alt css"></i> CSS</span>
+              <span><i class="fa-brands fa-js js"></i> JS</span>
+              <span><i class="fa-brands fa-bootstrap bs"></i> Bootstrap</span>
+            </div>
+            <a
+              href="https://github.com/simiyu-samuel/frontend-hotel-management-system"
+              class="btn btn-primary"
+              >View on GitHub</a
+            >
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-card">
+            <img src="img/prestashop.PNG" alt="Project 2" class="project-img" />
+            <h3>Prestashop Lipa Na Mpesa Payment Module</h3>
+            <p>Brief description of the project goes here.</p>
+            <div class="tech">
+              <span><i class="fa-brands fa-php php"></i> PHP</span>
+              <span><i class="fa-brands fa-s"></i> Smarty</span>
+              <span><i class="fa-brands fa-js js"></i> JS</span>
+              <span><i class="fa-brands fa-bootstrap bs"></i> Bootstrap</span>
+            </div>
+            <a
+              href="https://github.com/simiyu-samuel/Prestashop-Lipa-Na-Mpesa-Kopokopo-Module"
+              class="btn btn-primary"
+              >View on GitHub</a
+            >
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-card">
+            <img src="img/mpesa.PNG" alt="Project 3" class="project-img" />
+            <h3>Pearl Training Institute</h3>
+            <p>
+              A full college website consisting of student portal and staff
+              portal with full functionality.<br />
+              Collaborated with Lewis and Frank
+            </p>
+            <div class="tech">
+              <span><i class="fa-brands fa-python js"></i> Django</span>
+              <span><i class="fa-brands fa-react css"></i> React</span>
+              <span><i class="fa-brands fa-t css"></i> Tailwind</span>
+            </div>
+
+            <a
+              href="https://github.com/Lewis-mk/Pearl-Training-Institute"
+              class="btn btn-primary"
+              >View on GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards" class="container">
+      <h2 class="text-center mb-5">Awards</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="award-card">
+            <img src="img/worldskills.png" alt="Award 1" class="award-img" />
+            <h3>Worldskills Kenya Gold Medalist</h3>
+            <p>IT Software Solutions for Business</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="award-card">
+            <img src="img/tvet.png" alt="Award 2" class="award-img" />
+            <h3>National TVET Fair Gold Medalist</h3>
+            <p>IT Software Solutions for Business, 2024</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="award-card">
+            <img src="img/tvet.png" alt="Award 3" class="award-img" />
+            <h3>National TVET Fair Gold Medalist</h3>
+            <p>Website Design, 2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container py-5">
+      <h2 class="text-center mb-4 mt-4">Get in Touch</h2>
+      <div
+        id="alert-message"
+        class="alert alert-success alert-dismissible fade"
+        role="alert"
+        style="display: none"
+      >
+        <strong id="alert-text"></strong>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="alert"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <!-- Animated Background -->
+      <div class="contact-background d-flex"></div>
+      <form id="contact-form" class="p-4">
+        <div class="form-group mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter your name"
+          />
+          <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+        <div class="form-group mb-3">
+          <label for="email" class="form-label">Your Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <div class="invalid-feedback">
+            Please enter a valid email address.
+          </div>
+        </div>
+        <div class="form-group mb-3">
+          <label for="message" class="form-label">Your Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="5"
+            placeholder="Write your message"
+          ></textarea>
+          <div class="invalid-feedback">Please enter your message.</div>
+        </div>
+
+        <!-- Animated Submit Button -->
+        <button
+          type="submit"
+          onclick="sendMail()"
+          class="btn btn-primary btn-block btn-lg"
+        >
+          Send Message
+        </button>
+      </form>
+
+      <!-- Social Media Links -->
+      <div class="text-center mt-4">
+        <a
+          href="https://www.facebook.com/profile.php?id=100070854736869"
+          class="social-icon"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a
+          href="www.linkedin.com/in/samuel-simiyu-63270a236"
+          class="social-icon"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+        <a href="https://www.github.com/simiyu-samuel" class="social-icon"
+          ><i class="fa fa-github"></i
+        ></a>
+      </div>
+    </section>
+
+    <footer class="bg-light text-center py-3">
+      <p>© 2024 Samuel Simiyu | Full-Stack Software Developer</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,347 @@
+/* Colors */
+:root {
+  --primary-color: #3e5169;
+  --accent-color: #e75888;
+  --accent-a-color: #6e2f44;
+  --light-gray: #f5f5f5;
+  --dark-text: #2d2d2d;
+  --light-text: #ffffff;
+}
+/* Contact Section Background */
+.contact-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    var(--primary-color),
+    var(--accent-a-color)
+  );
+  opacity: 0.2;
+  z-index: -1;
+  animation: backgroundAnimation 10s infinite alternate;
+}
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+/* Form Styling */
+#contact-form {
+  background: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+#contact-form textarea {
+  resize: none;
+  height: 80px;
+}
+#contact-form input,
+#contact-form textarea {
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  padding: 12px;
+  font-size: 16px;
+  color: var(--dark-text);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+#alert-message {
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 20px;
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 10px rgba(255, 64, 129, 0.3); /* Pink shadow */
+}
+/* Button */
+button.btn {
+  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+  border: none;
+  color: var(--light-text);
+  padding: 12px;
+  font-size: 18px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 5px;
+}
+button.btn:hover {
+  background: linear-gradient(45deg, var(--accent-color), var(--primary-color));
+  box-shadow: 0 5px 15px rgba(26, 115, 232, 0.5); /* Blue shadow */
+}
+/* Social Media Icons */
+.social-icon {
+  color: var(--primary-color);
+  font-size: 24px;
+  margin: 0 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+  color: var(--accent-color);
+}
+/* Headings */
+h2 {
+  color: var(--primary-color);
+}
+p {
+  color: var(--dark-text);
+  font-size: 18px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+}
+/* Hero Section */
+#hero {
+  height: 100vh;
+  background: linear-gradient(135deg, var(--light-gray), var(--dark-text));
+  position: relative;
+  overflow: hidden;
+}
+.hero-content {
+  z-index: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 1s ease-in-out;
+}
+#hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: slideInLeft 1s ease-in-out;
+}
+#hero h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  animation: slideInRight 1.2s ease-in-out;
+}
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Project Section */
+#projects {
+  background: var(--light-gray);
+  padding: 60px 0;
+}
+.project-card {
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%; /* Ensure consistent height */
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(26, 115, 232, 0.2);
+}
+.project-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+.project-card:hover img {
+  transform: scale(1.05);
+}
+.project-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+.project-card p {
+  font-size: 16px;
+  color: var(--dark-text);
+}
+.project-card .btn {
+  background: var(--primary-color);
+  color: var(--light-text);
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+.project-card .btn:hover {
+  background: var(--accent-a-color);
+}
+/* About Section */
+#about {
+  background: var(--light-gray);
+  padding: 60px 0;
+}
+#about h2 {
+  color: var(--primary-color);
+}
+#about p {
+  font-size: 18px;
+  color: var(--dark-text);
+  margin-bottom: 20px;
+}
+#about img {
+  border: 5px solid var(--dark-text);
+  transition: border 0.3s ease;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#about img:hover {
+  border-color: var(--primary-color);
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Awards Section */
+#awards {
+  background: var(--light-gray);
+  padding: 60px 0;
+}
+.award-card {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.award-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.award-card:hover {
+  box-shadow: 0 8px 30px rgba(26, 115, 232, 0.2);
+  transform: translateY(-5px);
+}
+.award-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.award-card h3 {
+  color: var(--primary-color);
+}
+.award-card p {
+  font-size: 16px;
+  color: var(--dark-text);
+}
+.award-box {
+  transition: transform 0.3s;
+}
+.award-box:hover {
+  transform: scale(1.05);
+}
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: var(--accent-color);
+}
+h2 {
+  color: #343a40; /* Dark text for headings */
+}
+/* Default state of cards */
+#experience .card {
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+#experience .card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+#experience .card-title {
+  font-size: 1.5rem;
+  color: var(--dark-text);
+}
+#experience .card-subtitle {
+  font-size: 1rem;
+  color: #6c757d;
+}
+#experience .card-text {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+#experience ul {
+  padding-left: 1.25rem;
+}
+#experience ul li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+}
+#experience {
+  background-color: #f8f9fa;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#experience h2 {
+  color: var(--dark-text);
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+.tech {
+  width: 100%;
+}
+.html {
+  color: orangered;
+}
+.css {
+  color: royalblue;
+}
+.js {
+  color: rgb(224, 224, 9);
+}
+.bs {
+  color: purple;
+}
+.php {
+  color: rgb(71, 18, 133);
+}
+.laravel {
+  color: rgb(255, 70, 3);
+}
