@@ -129,7 +129,7 @@ window.addEventListener("scroll", function () {
     const cardPosition = card.getBoundingClientRect().top;
 
     if (cardPosition < screenHeight - 100) {
-      card.classList.add("visible"); // Adds the visible class to trigger the fade-in and slide-up
+      card.classList.add("visible");
     }
   });
 });

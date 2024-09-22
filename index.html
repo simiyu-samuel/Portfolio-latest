@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Samuel Simiyu - Full-Stack Developer Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
@@ -13,6 +13,13 @@
       src="https://kit.fontawesome.com/f8fb36d9f1.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8V0s4i04d3gzj6Mkkc4L/t9m40P0F9E3xD5K"
+      crossorigin="anonymous"
+    />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -44,7 +51,9 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
@@ -69,6 +78,8 @@
           Full-Stack Software Developer | Problem Solver | Innovator
         </h2>
         <a href="#projects" class="btn btn-dark btn-lg mt-4">View My Work</a>
+        <!-- Download Resume Button -->
+      <a href="files/resume.pdf" class="btn btn-light btn-lg mt-4" download>Download Resume</a>
       </div>
     </header>
     <!-- About Section -->
@@ -134,6 +145,56 @@
         </div>
       </div>
     </section>
+    <section id="skills" class="text-center my-5">
+      <div class="container">
+        <h2 class="display-4">My Technical Toolbox</h2>
+        <div class="row mt-4">
+          <!-- Frontend Skills -->
+          <div class="col-md-4 mb-4">
+            <!-- Added mb-4 for bottom margin -->
+            <div class="skill-card">
+              <h3>Frontend</h3>
+              <ul>
+                <li><i class="fab fa-js-square"></i> JavaScript</li>
+                <li><i class="fab fa-react"></i> React</li>
+                <li><i class="fab fa-react"></i> React Native</li>
+                <li><i class="fas fa-code"></i> jQuery</li>
+                <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+                <li><i class="fab fa-html5"></i> HTML/CSS</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Backend Skills -->
+          <div class="col-md-4 mb-4">
+            <!-- Added mb-4 for bottom margin -->
+            <div class="skill-card">
+              <h3>Backend</h3>
+              <ul>
+                <li><i class="fab fa-php"></i> PHP</li>
+                <li><i class="fab fa-laravel"></i> Laravel</li>
+                <li><i class="fas fa-code"></i> SQL</li>
+                <li><i class="fas fa-code"></i> Rest API</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Systems Programming Skills -->
+          <div class="col-md-4 ">
+            <!-- Added mb-4 for bottom margin -->
+            <div class="skill-card">
+              <h3>Systems Programming</h3>
+              <ul>
+                <li><i class="fas fa-code"></i> C++</li>
+                <li><i class="fas fa-code"></i> C</li>
+                <li><i class="fas fa-code"></i> Pascal</li>
+                <li><i class="fas fa-code"></i> Visual Basic</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+    </section>
 
     <section id="projects" class="container">
       <h2 class="text-center mb-5">Projects</h2>
@@ -160,7 +221,10 @@
           <div class="project-card">
             <img src="img/prestashop.PNG" alt="Project 2" class="project-img" />
             <h3>Prestashop Lipa Na Mpesa Payment Module</h3>
-            <p>External Prestashop Module that allows users to make payments via Lipa Na Mpesa Kopokopo K2 API.</p>
+            <p>
+              External Prestashop Module that allows users to make payments via
+              Lipa Na Mpesa Kopokopo K2 API.
+            </p>
             <div class="tech">
               <span><i class="fa-brands fa-php php"></i> PHP</span>
               <span><i class="fa-brands fa-s"></i> Smarty</span>
@@ -202,13 +266,7 @@
     <section id="awards" class="container">
       <h2 class="text-center mb-5">Awards</h2>
       <div class="row">
-        <div class="col-md-4">
-          <div class="award-card">
-            <img src="img/worldskills.png" alt="Award 1" class="award-img" />
-            <h3>Worldskills Kenya Gold Medalist</h3>
-            <p>IT Software Solutions for Business</p>
-          </div>
-        </div>
+        
         <div class="col-md-4">
           <div class="award-card">
             <img src="img/tvet.png" alt="Award 2" class="award-img" />
@@ -218,8 +276,15 @@
         </div>
         <div class="col-md-4">
           <div class="award-card">
+            <img src="img/worldskills.png" alt="Award 1" class="award-img" />
+            <h3>Worldskills Kenya Gold Medalist</h3>
+            <p>IT Software Solutions for Business</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="award-card">
             <img src="img/tvet.png" alt="Award 3" class="award-img" />
-            <h3>National TVET Fair Gold Medalist</h3>
+            <h3>Regional TVET Fair Gold Medalist</h3>
             <p>Website Design, 2024</p>
           </div>
         </div>
@@ -299,7 +364,7 @@
           ><i class="fa fa-facebook"></i
         ></a>
         <a
-          href="www.linkedin.com/in/samuel-simiyu-63270a236"
+          href="https://www.linkedin.com/in/samuel-simiyu-63270a236"
           class="social-icon"
           ><i class="fa fa-linkedin"></i
         ></a>

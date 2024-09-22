@@ -345,3 +345,47 @@ h2 {
 .laravel {
   color: rgb(255, 70, 3);
 }
+
+#skills {
+  background: var(--primary-color);
+  color: var(--light-text);
+  padding: 40px 0;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card ul li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.skill-card ul li i {
+  margin-right: 10px;
+  font-size: 1.5em;
+  transition: transform 0.3s;
+  color: var(--light-gray);
+}
+
+.skill-card ul li:hover i {
+  transform: scale(1.2);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-card h3 {
+  color: var(--dark-text);
+}
