@@ -1,7 +1,7 @@
 /* Colors */
 :root {
   --primary-color: #112641;
-  --accent-color: #e75888;
+  --accent-color: #310c61;
   --accent-a-color: #6e2f44;
   --light-gray: #f5f5f5;
   --dark-text: #2d2d2d;
@@ -362,47 +362,61 @@ h2 {
 }
 
 #skills {
-  background: var(--primary-color);
+  background: #6c757d;
   color: var(--light-text);
   padding: 40px 0;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .skill-card {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   padding: 20px;
+  margin: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1 0 30%;
+  max-width: 300px;
+  height: 300px;
 }
 
 .skill-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(63, 48, 54, 0.5); /* Accent color for shadow */
+}
+
+.skill-card h3 {
+  color: var(--accent-color); /* Accent color for headings */
+  border-bottom: 2px solid var(--accent-a-color); /* Bottom border for emphasis */
+  padding-bottom: 10px;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
 }
 
 .skill-card ul li {
   display: flex;
   align-items: center;
   margin: 10px 0;
+  color: var(--light-gray); /* Lighter text for list items */
 }
 
 .skill-card ul li i {
   margin-right: 10px;
   font-size: 1.5em;
   transition: transform 0.3s;
-  color: var(--light-gray);
+  color: var(--accent-color); /* Accent color for icons */
 }
 
 .skill-card ul li:hover i {
   transform: scale(1.2);
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.skill-card h3 {
-  color: var(--dark-text);
+  color: var(--light-text); /* Change icon color on hover */
 }
 @keyframes gradient {
   0% {
