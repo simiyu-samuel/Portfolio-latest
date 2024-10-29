@@ -1,5 +1,5 @@
 (function () {
-  emailjs.init("ilHPjAI2cdI9utfP7"); // Replace with your EmailJS user ID
+  emailjs.init("ilHPjAI2cdI9utfP7");
 })();
 
 function sendMail() {
@@ -77,20 +77,6 @@ function showAlert(message, type) {
     alertMessage.style.display = "none";
   }, 5000);
 }
-// Typing effect for the home section
-// const typedText = "Hi, I'm Samuel Simiyu";
-// let index = 0;
-
-// function type() {
-//   if (index < typedText.length) {
-//     document.getElementById("typed-text").textContent +=
-//       typedText.charAt(index);
-//     index++;
-//     setTimeout(type, 100); // Adjust typing speed here
-//   }
-// }
-
-// type();
 
 window.addEventListener("scroll", function () {
   const aboutImage = document.querySelector("#about img");
@@ -105,41 +91,65 @@ window.addEventListener("scroll", function () {
 const typedTextA = "Full-Stack Software Developer";
 let indexA = 0;
 
-// function typeA() {
-//   if (indexA < typedTextA.length) {
-//     document.getElementById("typed-text-a").textContent +=
-//       typedTextA.charAt(indexA);
-//     indexA++;
-//     setTimeout(typeA, 160);
-//   }
-// }
-
-// typeA();
-
-// Scroll down functionality
-document.getElementById("scroll-btn").addEventListener("click", function () {
-  document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+new Typed("#typing-effect", {
+  strings: [
+    "Problem Solver",
+    "Critical Thinker",
+    "Innovator",
+    "Lifelong Learner",
+  ],
+  typeSpeed: 70,
+  backSpeed: 50,
+  loop: true,
 });
-// Scroll animation function
-window.addEventListener("scroll", function () {
-  const projectCards = document.querySelectorAll(".project-card");
-  const screenHeight = window.innerHeight;
-
-  projectCards.forEach(function (card) {
-    const cardPosition = card.getBoundingClientRect().top;
-
-    if (cardPosition < screenHeight - 100) {
-      card.classList.add("visible");
-    }
-  });
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 50 },
+    color: { value: "#6c757d" },
+    shape: { type: "triangle" },
+    opacity: { value: 0.5 },
+    size: { value: 5 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#6c757d",
+      opacity: 0.4,
+      width: 1,
+    },
+    move: { enable: true, speed: 4 },
+  },
 });
-
-// Smooth scrolling
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-    });
-  });
+particlesJS("particles-js2", {
+  particles: {
+    number: { value: 50 },
+    color: { value: "#6c757d" },
+    shape: { type: "triangle" },
+    opacity: { value: 0.5 },
+    size: { value: 5 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#6c757d",
+      opacity: 0.4,
+      width: 1,
+    },
+    move: { enable: true, speed: 4 },
+  },
+});
+particlesJS("particles-js3", {
+  particles: {
+    number: { value: 100 },
+    color: { value: "#6c757d" },
+    shape: { type: "triangle" },
+    opacity: { value: 0.5 },
+    size: { value: 5 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#6c757d",
+      opacity: 0.4,
+      width: 1,
+    },
+    move: { enable: true, speed: 4 },
+  },
 });

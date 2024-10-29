@@ -77,21 +77,41 @@
       </div>
     </nav>
 
-    <!-- Home Section -->
-    <header
-      id="hero"
-      class="text-white text-center d-flex justify-content-center align-items-center"
-    >
-      <div class="hero-content">
-        <h1 class="display-4">Samuel Simiyu</h1>
-        <h2 class="lead">
-          Full-Stack Software Developer | Problem Solver | Innovator
-        </h2>
-        <a href="#projects" class="btn btn-dark btn-lg mt-4">View My Work</a>
-        <!-- Download Resume Button -->
+<!-- Home Section -->
+<header
+  id="hero"
+  class="text-white text-center d-flex justify-content-center align-items-center position-relative"
+  style="height: 100vh; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/background.jpg') no-repeat center center / cover;"
+>
+  <!-- Animated Background Particles -->
+  <div class="particles-background position-absolute w-100 h-100" id="particles-js"></div>
+
+  <div class="hero-content text-left">
+    <h1 class="display-4 mb-2">Samuel Simiyu</h1>
+    <h2 class="lead mb-4">
+      Full-Stack Software Developer | <span id="typing-effect"></span>
+    </h2>
+    <div class="buttons mb-4">
+      <a href="#projects" class="btn btn-dark btn-lg mt-4">View My Work</a>
       <a href="files/resume.pdf" class="btn btn-light btn-lg mt-4" download>Download Resume</a>
-      </div>
-    </header>
+    </div>
+    
+    <!-- Social Media Links -->
+    <div class="social-icons mt-3">
+      <a href="https://www.github.com/simiyu-samuel" target="_blank" class="text-light mx-2"><i class="fab fa-github fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/samuel-simiyu-63270a236" target="_blank" class="text-light mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="mailto:simiyusamuel869@gmail.com" class="text-light mx-2"><i class="fas fa-envelope fa-2x"></i></a>
+    </div>
+
+    <!-- Scroll Down Button -->
+    <div class="scroll-down mt-4">
+      <a href="#about" class="btn btn-outline-light btn-lg">Explore <i class="fas fa-angle-double-down"></i></a>
+    </div>
+  </div>
+
+
+</header>
+
     <!-- About Section -->
     <section id="about" class="container py-5">
       <div class="row align-items-center">
@@ -102,6 +122,7 @@
             class="img-fluid rounded-circle mb-4 mt-5"
           />
         </div>
+        <div class="particles-background position-absolute w-100 h-100" id="particles-js2"></div>
         <div class="col-md-6">
           <h2>About Me</h2>
           <p>
@@ -112,6 +133,7 @@
           <a href="#contact" class="btn btn-dark btn-lg">Get in Touch</a>
         </div>
       </div>
+
     </section>
 
     <!-- Experience Section -->
@@ -242,7 +264,7 @@
               <span><i class="fa-brands fa-bootstrap bs"></i> Bootstrap</span>
             </div>
             <a
-              href="https://github.com/simiyu-samuel/Prestashop-Lipa-Na-Mpesa-Kopokopo-Module"
+              href="https://github.com/simiyu-samuel/Prestashop-Lipa-Na-Mpesa-Module"
               class="btn btn-primary"
               >View on GitHub</a
             >
@@ -250,7 +272,7 @@
         </div>
         <div class="col-md-4">
           <div class="project-card">
-            <img src="img/mpesa.PNG" alt="Project 3" class="project-img" />
+            <img src="img/staff-login.PNG" alt="Project 3" class="project-img" />
             <h3>Pearl Training Institute</h3>
             <p>
               A full college website consisting of student portal and staff
@@ -264,7 +286,7 @@
             </div>
 
             <a
-              href="https://github.com/Lewis-mk/Pearl-Training-Institute"
+              href="https://github.com/simiyu-samuel/Pearl-Training-Institute"
               class="btn btn-primary"
               >View on GitHub</a
             >
@@ -302,6 +324,7 @@
     </section>
 
     <section id="contact" class="container py-5">
+      
       <h2 class="text-center mb-4 mt-4">Get in Touch</h2>
       <div
         id="alert-message"
@@ -319,9 +342,10 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-
+      <div class="particles-background position-absolute w-100 h-100" id="particles-js3"></div>
       <!-- Animated Background -->
       <div class="contact-background d-flex"></div>
+
       <form id="contact-form" class="p-4">
         <div class="form-group mb-3">
           <label for="name" class="form-label">Your Name</label>
@@ -356,6 +380,7 @@
           <div class="invalid-feedback">Please enter your message.</div>
         </div>
 
+
         <!-- Animated Submit Button -->
         <button
           type="submit"
@@ -364,9 +389,7 @@
         >
           Send Message
         </button>
-      </form>
-
-      <!-- Social Media Links -->
+              <!-- Social Media Links -->
       <div class="text-center mt-4">
         <a
           href="https://www.facebook.com/profile.php?id=100070854736869"
@@ -382,12 +405,20 @@
           ><i class="fa fa-github"></i
         ></a>
       </div>
+      </form>
+
+
     </section>
 
     <footer class="bg-light text-center py-3">
       <p>© 2024 Samuel Simiyu | Full-Stack Software Developer</p>
     </footer>
 
+    <!-- Typed.js for Typing Effect -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Particles.js for Background Animation -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hustcc/canvas-nest.js@2.0.4/dist/canvas-nest.umd.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
