@@ -47,8 +47,8 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="index.html">Samuel Simiyu</a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="nav">
+      <a class="navbar-brand" href="index.html">SAMUEL SIMIYU</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -72,7 +72,7 @@
             <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#awards">Awards</a>
+            <a class="nav-link" href="#awards">Achievements</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -85,15 +85,7 @@
     <header
       id="hero"
       class="text-white text-center d-flex justify-content-center align-items-center position-relative"
-      style="
-        height: 100vh;
-        background: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0.8),
-            rgba(0, 0, 0, 0.8)
-          ),
-          url('images/background.jpg') no-repeat center center / cover;
-      "
+      style="height: 100vh; background: #1f2833"
     >
       <!-- Animated Background Particles -->
       <div
@@ -106,9 +98,11 @@
         <h2 class="lead mb-4">
           Full-Stack Software Developer | <span id="typing-effect"></span>
         </h2>
-        <div class="buttons mb-4">
-          <a href="#projects" class="btn btn-dark btn-lg mt-4">View My Work</a>
-          <a href="files/resume.pdf" class="btn btn-light btn-lg mt-4" download
+        <div class="buttons mb-4" id="btns-ct">
+          <a href="#projects" class="btn btn-primary btn-sm mt-4" id="vw"
+            >View My Work</a
+          >
+          <a href="files/resume.pdf" class="btn btn-light btn-sm mt-4" download
             >Download Resume</a
           >
         </div>
@@ -142,7 +136,7 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="container py-5">
+    <section id="about" class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
           <img
@@ -155,7 +149,7 @@
           class="particles-background position-absolute w-100 h-100"
           id="particles-js2"
         ></div>
-        <div class="col-md-6">
+        <div class="col-md-6 px-5">
           <h2>About Me</h2>
           <p>
             I am a passionate Full-Stack Software Developer with expertise in
@@ -210,7 +204,7 @@
     </section>
     <section id="skills" class="text-center my-5">
       <div class="container">
-        <h2 class="display-4">My Technical Toolbox</h2>
+        <h2 class="display-4">SKILLS</h2>
         <div class="row mt-4 skills-container">
           <!-- Frontend Skills -->
           <div class="col-md-4 mb-4">
@@ -222,7 +216,10 @@
                 <li><i class="fab fa-react"></i> React Native</li>
                 <li><i class="fas fa-code"></i> jQuery</li>
                 <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
-                <li><i class="fab fa-html5"></i> HTML/CSS</li>
+                <li>
+                  <i class="fab fa-html5"></i>HTML<br />
+                  <i class="fab fa-css3"></i> CSS
+                </li>
               </ul>
             </div>
           </div>

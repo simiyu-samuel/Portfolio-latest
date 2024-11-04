@@ -1,8 +1,8 @@
 /* Colors */
 :root {
   --primary-color: #112641;
-  --accent-color: #310c61;
-  --accent-a-color: #6e2f44;
+  --accent-color: #0b3155;
+  --accent-a-color: #033e75;
   --light-gray: #f5f5f5;
   --dark-text: #2d2d2d;
   --light-text: #ffffff;
@@ -22,6 +22,31 @@
   opacity: 0.2;
   z-index: -1;
   animation: backgroundAnimation 10s infinite alternate;
+}
+#nav {
+  background: #3aafa9;
+}
+#nav .nav-item a {
+  color: #1f2833;
+  margin-right: 50px;
+  text-transform: uppercase;
+}
+#nav .nav-item a:hover {
+  transform: scale(1.2);
+  color: #2b3f58;
+}
+#vw {
+  background: #3aafa9;
+}
+#btns-ct {
+  display: flex;
+  column-gap: 30px;
+}
+#btns-ct a:hover {
+  transform: scale(0.9);
+}
+#vw:hover {
+  background: #176279;
 }
 @keyframes backgroundAnimation {
   0% {
@@ -103,14 +128,26 @@ p {
   .form-group {
     margin-bottom: 1.5rem;
   }
+  .hero-content {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #hero,
+  #about {
+    padding-top: 120px;
+  }
+  #hero h2,
+  #hero h1 {
+    font-size: 14px;
+  }
 }
 /* Hero Section */
-#hero {
+/* #hero {
   height: 100vh;
-  background: linear-gradient(135deg, var(--light-gray), var(--dark-text));
+  background: linear-gradient(135deg, #0fa4af,  #3AAFA9);
   position: relative;
   overflow: hidden;
-}
+} */
 .hero-content,
 .game-container {
   flex-basis: 100%;
@@ -118,9 +155,6 @@ p {
 @media (min-width: 768px) {
   .hero-content {
     max-width: 50%;
-  }
-  .game-container {
-    max-width: 35%;
   }
 }
 
@@ -135,8 +169,8 @@ p {
   animation: slideInLeft 1s ease-in-out;
 }
 #hero h2 {
-  color: rgba(3, 1, 29, 0.6);
-  text-shadow: 2px 2px 4px rgba(102, 100, 100, 0.6);
+  color: #3aafa9;
+  text-shadow: 2px 2px 4px rgba(4, 21, 53, 0.6);
   font-size: 1.8rem;
   margin-top: 20px;
   animation: slideInRight 1.2s ease-in-out;
@@ -362,7 +396,7 @@ h2 {
 }
 
 #skills {
-  background: #6c757d;
+  background: #fff;
   color: var(--light-text);
   padding: 40px 0;
 }
@@ -374,7 +408,7 @@ h2 {
 }
 
 .skill-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: #6a94aa;
   border-radius: 10px;
   padding: 20px;
   margin: 10px;

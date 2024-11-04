@@ -106,12 +106,12 @@ particlesJS("particles-js", {
   particles: {
     number: { value: 50 },
     color: { value: "#6c757d" },
-    shape: { type: "triangle" },
+    shape: { type: "circle" },
     opacity: { value: 0.5 },
     size: { value: 5 },
     line_linked: {
       enable: true,
-      distance: 150,
+      distance: 100,
       color: "#6c757d",
       opacity: 0.4,
       width: 1,
