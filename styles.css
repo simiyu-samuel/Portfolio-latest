@@ -216,6 +216,7 @@ p {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%; /* Ensure consistent height */
+  gap: 30px;
 }
 .project-card:hover {
   transform: translateY(-10px);

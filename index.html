@@ -162,34 +162,40 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="container">
-      <h2>Professional Experience</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
+    <section id="experience" class="container my-5">
+      <h2 class="text-center display-4">Professional Experience</h2>
+      <div class="row mt-4">
+        <!-- Software Engineer -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
             <div class="card-body">
               <h5 class="card-title">Software Engineer</h5>
               <h6 class="card-subtitle mb-2 text-muted">
                 Icore Information Systems Ltd
               </h6>
               <p class="card-text">
-                  Developing scalable Backend Systems using PHP and Laravel.
-              </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Web Master</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Beyond Technology</h6>
-              <p class="card-text">
-                Managed website maintenance and performance optimization.
+                Developing scalable backend systems using PHP and Laravel.
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
+
+        <!-- Web Master -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Web Master</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Beyond Technology</h6>
+              <p class="card-text">
+                Managed website maintenance and optimized performance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Developer -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
             <div class="card-body">
               <h5 class="card-title">Web Developer</h5>
               <h6 class="card-subtitle mb-2 text-muted">Freelance</h6>
@@ -201,23 +207,24 @@
         </div>
       </div>
     </section>
+
     <section id="skills" class="text-center my-5">
       <div class="container">
-        <h2 class="display-4">SKILLS</h2>
+        <h2 class="display-4">Skills</h2>
         <div class="row mt-4 skills-container">
           <!-- Frontend Skills -->
           <div class="col-md-4 mb-4">
             <div class="skill-card">
-              <h3>Frontend</h3>
-              <ul>
+              <h3 class="skill-title">Frontend</h3>
+              <ul class="list-unstyled">
                 <li><i class="fab fa-js-square"></i> JavaScript</li>
                 <li><i class="fab fa-react"></i> React</li>
                 <li><i class="fab fa-react"></i> React Native</li>
                 <li><i class="fas fa-code"></i> jQuery</li>
                 <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
                 <li>
-                  <i class="fab fa-html5"></i>HTML<br />
-                  <i class="fab fa-css3"></i> CSS
+                  <i class="fab fa-html5"></i> HTML &nbsp;
+                  <i class="fab fa-css3-alt"></i> CSS
                 </li>
               </ul>
             </div>
@@ -226,13 +233,13 @@
           <!-- Backend Skills -->
           <div class="col-md-4 mb-4">
             <div class="skill-card">
-              <h3>Backend</h3>
-              <ul>
+              <h3 class="skill-title">Backend</h3>
+              <ul class="list-unstyled">
                 <li><i class="fab fa-php"></i> PHP</li>
                 <li><i class="fab fa-laravel"></i> Laravel</li>
-                <li><i class="fab fa-node"></i> Node</li>
-                <li><i class="fas fa-code"></i> SQL</li>
-                <li><i class="fas fa-code"></i> REST API</li>
+                <li><i class="fab fa-node"></i> Node.js</li>
+                <li><i class="fas fa-database"></i> SQL</li>
+                <li><i class="fas fa-network-wired"></i> REST API</li>
               </ul>
             </div>
           </div>
@@ -240,12 +247,12 @@
           <!-- Systems Programming Skills -->
           <div class="col-md-4 mb-4">
             <div class="skill-card">
-              <h3>Systems Programming</h3>
-              <ul>
-                <li><i class="fas fa-code"></i> C++</li>
-                <li><i class="fas fa-code"></i> C</li>
-                <li><i class="fas fa-code"></i> Pascal</li>
-                <li><i class="fas fa-code"></i> Visual Basic</li>
+              <h3 class="skill-title">Systems Programming</h3>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-cogs"></i> C++</li>
+                <li><i class="fas fa-cogs"></i> C</li>
+                <li><i class="fas fa-cogs"></i> Pascal</li>
+                <li><i class="fas fa-cogs"></i> Visual Basic</li>
               </ul>
             </div>
           </div>
@@ -253,72 +260,121 @@
       </div>
     </section>
 
-    <section id="projects" class="container">
-      <h2 class="text-center mb-5">Projects</h2>
+    <section id="projects" class="container my-5">
+      <h2 class="text-center display-4 mb-5">Projects</h2>
       <div class="row">
-        <div class="col-md-4">
-          <div class="project-card">
-            <img src="img/ihotel.PNG" alt="Project 1" class="project-img" />
-            <h3>Frontend Hotel Management System</h3>
-            <p>Full frontend Hotel MS with cool Design and functionality.</p>
-            <div class="tech">
-              <span><i class="fa-brands fa-html5 html"></i> HTML</span>
-              <span><i class="fa-brands fa-css3-alt css"></i> CSS</span>
-              <span><i class="fa-brands fa-js js"></i> JS</span>
-              <span><i class="fa-brands fa-bootstrap bs"></i> Bootstrap</span>
+        <!-- Project 1: Frontend Hotel Management System -->
+        <div class="col-md-6 mb-4">
+          <div class="project-card h-100">
+            <img
+              src="img/ihotel.PNG"
+              alt="Frontend Hotel Management System"
+              class="project-img w-100"
+            />
+            <div class="project-content p-3">
+              <h3>Frontend Hotel Management System</h3>
+              <p>
+                A comprehensive frontend hotel management system with a modern
+                design and interactive functionality.
+              </p>
+              <div class="tech">
+                <span><i class="fab fa-html5 html"></i> HTML</span>
+                <span><i class="fab fa-css3-alt css"></i> CSS</span>
+                <span><i class="fab fa-js js"></i> JavaScript</span>
+                <span><i class="fab fa-bootstrap bs"></i> Bootstrap</span>
+              </div>
+              <a
+                href="https://github.com/simiyu-samuel/frontend-hotel-management-system"
+                class="btn btn-primary mt-3"
+                >View on GitHub</a
+              >
             </div>
-            <a
-              href="https://github.com/simiyu-samuel/frontend-hotel-management-system"
-              class="btn btn-primary"
-              >View on GitHub</a
-            >
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="project-card">
-            <img src="img/prestashop.PNG" alt="Project 2" class="project-img" />
-            <h3>Prestashop Lipa Na Mpesa Payment Module</h3>
-            <p>
-              External Prestashop Module that allows users to make payments via
-              Lipa Na Mpesa Kopokopo K2 API.
-            </p>
-            <div class="tech">
-              <span><i class="fa-brands fa-php php"></i> PHP</span>
-              <span><i class="fa-brands fa-s"></i> Smarty</span>
-              <span><i class="fa-brands fa-js js"></i> JS</span>
-              <span><i class="fa-brands fa-bootstrap bs"></i> Bootstrap</span>
+
+        <!-- Project 2: Prestashop Lipa Na Mpesa Payment Module -->
+        <div class="col-md-6 mb-4">
+          <div class="project-card h-100">
+            <img
+              src="img/prestashop.PNG"
+              alt="Prestashop Lipa Na Mpesa Payment Module"
+              class="project-img w-100"
+            />
+            <div class="project-content p-3">
+              <h3>Prestashop Lipa Na Mpesa Payment Module</h3>
+              <p>
+                An external Prestashop module enabling payments via Lipa Na
+                Mpesa using Kopokopo K2 API integration.
+              </p>
+              <div class="tech">
+                <span><i class="fab fa-php php"></i> PHP</span>
+                <span><i class="fab fa-smile-wink"></i> Smarty</span>
+                <span><i class="fab fa-js js"></i> JavaScript</span>
+                <span><i class="fab fa-bootstrap bs"></i> Bootstrap</span>
+              </div>
+              <a
+                href="https://github.com/simiyu-samuel/Prestashop-Lipa-Na-Mpesa-Module"
+                class="btn btn-primary mt-3"
+                >View on GitHub</a
+              >
             </div>
-            <a
-              href="https://github.com/simiyu-samuel/Prestashop-Lipa-Na-Mpesa-Module"
-              class="btn btn-primary"
-              >View on GitHub</a
-            >
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="project-card">
+
+        <!-- Project 3: Waste Management System -->
+        <div class="col-md-6 mb-4">
+          <div class="project-card h-100">
+            <img
+              src="img/waste.PNG"
+              alt="Waste Management System"
+              class="project-img w-100"
+            />
+            <div class="project-content p-3">
+              <h3>Waste Management System</h3>
+              <p>
+                An intuitive dashboard with data visualization, predictive
+                analytics, and performance tracking for waste management
+                efficiency.
+              </p>
+              <div class="tech">
+                <span><i class="fab fa-laravel"></i> Laravel</span>
+                <span><i class="fab fa-js js"></i> JavaScript</span>
+                <span><i class="fab fa-bootstrap bs"></i> Bootstrap</span>
+              </div>
+              <a
+                href="https://github.com/simiyu-samuel/Waste-Management-System"
+                class="btn btn-primary mt-3"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Pearl Training Institute -->
+        <div class="col-md-6 mb-4">
+          <div class="project-card h-100">
             <img
               src="img/staff-login.PNG"
-              alt="Project 3"
-              class="project-img"
+              alt="Pearl Training Institute Project"
+              class="project-img w-100"
             />
-            <h3>Pearl Training Institute</h3>
-            <p>
-              A full college website consisting of student portal and staff
-              portal with full functionality.<br />
-              Collaborated with Lewis and Frank
-            </p>
-            <div class="tech">
-              <span><i class="fa-brands fa-python js"></i> Django</span>
-              <span><i class="fa-brands fa-react css"></i> React</span>
-              <span><i class="fa-brands fa-t css"></i> Tailwind</span>
+            <div class="project-content p-3">
+              <h3>Pearl Training Institute</h3>
+              <p>
+                A complete college website with student and staff portals,
+                featuring full functionality. Collaborated with Lewis and Frank.
+              </p>
+              <div class="tech">
+                <span><i class="fab fa-python"></i> Django</span>
+                <span><i class="fab fa-react"></i> React</span>
+                <span><i class="fab fa-css3-alt"></i> Tailwind CSS</span>
+              </div>
+              <a
+                href="https://github.com/simiyu-samuel/Pearl-Training-Institute"
+                class="btn btn-primary mt-3"
+                >View on GitHub</a
+              >
             </div>
-
-            <a
-              href="https://github.com/simiyu-samuel/Pearl-Training-Institute"
-              class="btn btn-primary"
-              >View on GitHub</a
-            >
           </div>
         </div>
       </div>
