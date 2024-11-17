@@ -153,3 +153,40 @@ particlesJS("particles-js3", {
     move: { enable: true, speed: 4 },
   },
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const skillItems = document.querySelectorAll(".skill-item");
+  const skillDescription = document.getElementById("skill-description");
+
+  skillItems.forEach((item) => {
+    item.addEventListener("mouseenter", () => {
+      const description = item.getAttribute("data-skill");
+      skillDescription.textContent = description;
+      skillDescription.style.opacity = "1";
+    });
+
+    item.addEventListener("mouseleave", () => {
+      skillDescription.style.opacity = "0";
+    });
+  });
+
+  const experienceItems = document.querySelectorAll(".experience-item");
+  const detailBox = document.querySelector(".experience-detail");
+  const detailText = document.querySelector(".detail-text");
+
+  experienceItems.forEach((item) => {
+    item.addEventListener("mouseover", () => {
+      // Display the detail box with the corresponding detail
+      const detail = item.getAttribute("data-detail");
+      detailText.textContent = detail;
+      //detailBox.style.display = "block";
+    });
+
+    item.addEventListener("mouseleave", () => {
+      // Hide the detail box when not hovering
+      //detailBox.style.display = "none";
+      detailText.textContent =
+        "Gained diverse software development skills across my experience";
+    });
+  });
+});
