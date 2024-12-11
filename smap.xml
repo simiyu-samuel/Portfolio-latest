@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image/1.1">
-   <url>
-       <loc>https://simiyu-samuel.github.io/Portfolio-latest/</loc>
-       <lastmod>2024-01-01</lastmod>
-       <changefreq>monthly</changefreq>
-       <priority>1.0</priority>
-   </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://simiyu-samuel.github.io/Portfolio-latest/</loc>
+    <lastmod>2024-12-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://simiyu-samuel.github.io/Portfolio-latest/index.html#about</loc>
+    <lastmod>2024-12-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+        <!-- skills Page -->
+  <url>
+    <loc>https://simiyu-samuel.github.io/Portfolio-latest/index.html#skills</loc>
+    <lastmod>2024-12-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+     <!-- project Page -->
+  <url>
+    <loc>https://simiyu-samuel.github.io/Portfolio-latest/index.html#projects</loc>
+    <lastmod>2024-12-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>   
+     <!-- Contact Page -->
+  <url>
+    <loc>https://simiyu-samuel.github.io/Portfolio-latest/index.html#contact</loc>
+    <lastmod>2024-12-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
