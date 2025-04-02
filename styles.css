@@ -325,9 +325,10 @@ p {
 .project-card h3 {
   color: var(--primary-color);
   margin-bottom: 10px;
+  font-size: 18px;
 }
 .project-card p {
-  font-size: 16px;
+  font-size: 12px;
   color: var(--dark-text);
 }
 .project-card .btn {
