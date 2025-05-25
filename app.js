@@ -2,6 +2,44 @@
   emailjs.init("ilHPjAI2cdI9utfP7");
 })();
 
+const skillItems = document.querySelectorAll(".skill-item");
+const skillDesc = document.getElementById("skill-description");
+
+skillItems.forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    skillDesc.textContent = item.getAttribute("data-skill");
+  });
+  item.addEventListener("focus", () => {
+    skillDesc.textContent = item.getAttribute("data-skill");
+  });
+  item.addEventListener("mouseleave", () => {
+    skillDesc.textContent = "";
+  });
+  item.addEventListener("blur", () => {
+    skillDesc.textContent = "";
+  });
+});
+
+const experienceItems = document.querySelectorAll(".experience-item");
+const detailBox = document.querySelector(".experience-detail");
+const detailText = document.querySelector(".detail-text");
+
+experienceItems.forEach((item) => {
+  item.addEventListener("mouseover", () => {
+    // Display the detail box with the corresponding detail
+    const detail = item.getAttribute("data-detail");
+    detailText.textContent = detail;
+    //detailBox.style.display = "block";
+  });
+
+  item.addEventListener("mouseleave", () => {
+    // Hide the detail box when not hovering
+    //detailBox.style.display = "none";
+    detailText.textContent =
+      "Gained diverse software development skills across my experience";
+  });
+});
+
 function sendMail() {
   document
     .getElementById("contact-form")
@@ -167,26 +205,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     item.addEventListener("mouseleave", () => {
       skillDescription.style.opacity = "0";
-    });
-  });
-
-  const experienceItems = document.querySelectorAll(".experience-item");
-  const detailBox = document.querySelector(".experience-detail");
-  const detailText = document.querySelector(".detail-text");
-
-  experienceItems.forEach((item) => {
-    item.addEventListener("mouseover", () => {
-      // Display the detail box with the corresponding detail
-      const detail = item.getAttribute("data-detail");
-      detailText.textContent = detail;
-      //detailBox.style.display = "block";
-    });
-
-    item.addEventListener("mouseleave", () => {
-      // Hide the detail box when not hovering
-      //detailBox.style.display = "none";
-      detailText.textContent =
-        "Gained diverse software development skills across my experience";
     });
   });
 });

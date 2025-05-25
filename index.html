@@ -51,55 +51,66 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top" id="nav">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="img/logo.png" class="logo mr-2" style="height: 40px;" alt="logo" />
-      <span class="font-weight-bold">Samuel Simiyu</span>
-    </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top"
+      id="nav"
     >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto text-uppercase font-weight-bold">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#awards">Achievements</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link btn btn-success text-white px-3 py-1 ml-md-3 mt-2 mt-md-0" href="https://gumroad.com/yourstore" target="_blank">
-            Shop
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="img/logo.png"
+            class="logo mr-2"
+            style="height: 40px"
+            alt="logo"
+          />
+          <span class="font-weight-bold">Samuel Simiyu</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto text-uppercase font-weight-bold">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#awards">Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-success text-white px-3 py-1 ml-md-3 mt-2 mt-md-0"
+                href="https://gumroad.com/yourstore"
+                target="_blank"
+              >
+                Shop
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- Home Section -->
     <header
@@ -114,15 +125,29 @@
       ></div>
 
       <div class="hero-content text-left">
-        <h1 class="display-4 mb-2">SAMUEL SIMIYU</h1>
-        <h2 class="lead mb-4">
+        <h1 class="display-4 mb-2 font-weight-bold">Samuel Simiyu</h1>
+        <h2 class="lead mb-3">
           Full-Stack Software Developer | <span id="typing-effect"></span>
         </h2>
+
+        <p class="mb-4 text-light">
+          I build web systems and digital products like payment modules and sell
+          them on Gumroad.
+        </p>
+
+        <!-- CTA Buttons -->
         <div class="buttons mb-4" id="btns-ct">
-          <a href="#projects" class="btn btn-primary btn-sm mt-4" id="vw"
-            >Projects</a
+          <a href="#projects" class="btn btn-primary btn-sm mt-2"
+            >View Projects</a
           >
-          <a href="files/resume.pdf" class="btn btn-light btn-sm mt-4" download
+          <a
+            href="https://gumroad.com/yourstore"
+            target="_blank"
+            class="btn btn-success btn-sm mt-2"
+          >
+            Visit My Store
+          </a>
+          <a href="files/resume.pdf" class="btn btn-light btn-sm mt-2" download
             >Download Resume</a
           >
         </div>
@@ -133,50 +158,64 @@
             href="https://www.github.com/simiyu-samuel"
             target="_blank"
             class="text-light mx-2"
-            ><i class="fab fa-github fa-2x"></i
-          ></a>
+          >
+            <i class="fab fa-github fa-2x"></i>
+          </a>
           <a
             href="https://www.linkedin.com/in/samuel-simiyu-63270a236"
             target="_blank"
             class="text-light mx-2"
-            ><i class="fab fa-linkedin fa-2x"></i
-          ></a>
-          <a href="mailto:simiyusamuel869@gmail.com" class="text-light mx-2"
-            ><i class="fas fa-envelope fa-2x"></i
-          ></a>
+          >
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="mailto:simiyusamuel869@gmail.com" class="text-light mx-2">
+            <i class="fas fa-envelope fa-2x"></i>
+          </a>
         </div>
 
         <!-- Scroll Down Button -->
         <div class="scroll-down mt-4">
-          <a href="#about" class="btn btn-outline-light btn-lg"
-            >Explore <i class="fas fa-angle-double-down"></i
-          ></a>
+          <a href="#about" class="btn btn-outline-light btn-lg">
+            Explore <i class="fas fa-angle-double-down"></i>
+          </a>
         </div>
       </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="container">
+    <section id="about" class="container position-relative py-5">
       <div class="row align-items-center">
-        <div class="col-md-6">
+        <div class="col-md-6 text-center">
           <img
             src="img/Snapchat-762158760.jpg"
             alt="Samuel Simiyu"
-            class="img-fluid rounded-circle mb-4 mt-5"
+            class="img-fluid rounded-circle mb-4 mt-3 about-img"
           />
         </div>
-        <div
-          class="particles-background position-absolute w-100 h-100"
-          id="particles-js2"
-        ></div>
-        <div class="col-md-6 px-5">
-          <h2>About Me</h2>
-          <p>
+
+        <div class="col-md-6 px-md-5">
+          <h2 class="mb-4 about-title">About Me</h2>
+          <p class="about-text">
             I am a passionate Full-Stack Software Developer with expertise in
             building responsive websites, mobile applications, and solving
-            complex back-end challenges.
+            complex back-end challenges. Alongside, I am growing as a digital
+            creator and freelancer — selling useful software tools and guides on
+            <a
+              href="https://gumroad.com/simiyu-samuel"
+              target="_blank"
+              class="gumroad-link"
+              >Gumroad</a
+            >, and collaborating with clients worldwide to bring innovative
+            projects to life.
           </p>
-          <a href="#contact" class="btn btn-dark btn-lg">Get in Touch</a>
+          <a href="#contact" class="btn btn-dark btn-lg mt-3">Get in Touch</a>
+          <a
+            href="https://gumroad.com/simiyu-samuel"
+            target="_blank"
+            class="btn btn-success btn-lg mt-3 ml-3 gumroad-btn"
+          >
+            Visit My Gumroad Store
+          </a>
         </div>
       </div>
     </section>
@@ -308,300 +347,252 @@
       <div id="skill-description"></div>
     </section>
 
-    <section id="projects" class="container my-5">
-      <h2 class="text-center display-4 mb-5">Projects</h2>
-      <div class="row">
-        <!-- Project 1: Lines Genius -->
-        <div class="col-md-4 mb-4">
-          <div class="project-card h-100">
-            <img
-              src="img/lines.PNG"
-              alt="Lines Genius: Programming Fun & Innovation"
-              class="project-img w-100"
-            />
-            <div class="project-content p-3">
-              <h3>Lines Genius: Programming Fun & Innovation</h3>
-              <p>
-                Lines Genius is a creative initiative blending coding, humor,
-                and innovation. It features programming videos, coding jokes,
-                and showcases of innovative projects.
-              </p>
-              <div class="tech">
-                <span><i class="fab fa-html5 html"></i> HTML</span>
-                <span><i class="fab fa-css3-alt css"></i> CSS</span>
-                <span><i class="fab fa-js js"></i> JavaScript</span>
-                <span><i class="fab fa-bootstrap bs"></i> Bootstrap</span>
-              </div>
-              <a
-                href="https://github.com/simiyu-samuel/linesgenious"
-                class="btn btn-primary mt-3"
-                >View on GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- Project added: Lines Genius -->
-        <div class="col-md-4 mb-4">
-          <div class="project-card h-100">
-            <img
-              src="img/crash.PNG"
-              alt="Crash game"
-              class="project-img w-100"
-            />
-            <div class="project-content p-3">
-              <h3>Crash Game: real-time multiplayer betting game</h3>
-              <p>
-                Crash Game is a real-time multiplayer betting game where players
-                place bets, watch a multiplier increase, and cash out before the
-                game crashes.
-              </p>
-              <div class="tech">
-                <span><i class="fab fa-node bs"></i> Node js</span>
-                <span><i class="fab fa-js js"></i> JavaScript</span>
-                <span><i class="fab fa-html5 html"></i> HTML</span>
-                <span><i class="fab fa-css3-alt css"></i> CSS</span>
-              </div>
-              <a
-                href="https://github.com/simiyu-samuel/crash-game"
-                class="btn btn-primary mt-3"
-                >View on GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- Project 2: Frontend Hotel Management System -->
-        <div class="col-md-4 mb-4">
-          <div class="project-card h-100">
-            <img
-              src="img/ihotel.PNG"
-              alt="Frontend Hotel Management System"
-              class="project-img w-100"
-            />
-            <div class="project-content p-3">
-              <h3>Frontend Hotel Management System</h3>
-              <p>
-                A comprehensive frontend hotel management system with a modern
-                design and interactive functionality.
-              </p>
-              <div class="tech">
-                <span><i class="fab fa-html5 html"></i> HTML</span>
-                <span><i class="fab fa-css3-alt css"></i> CSS</span>
-                <span><i class="fab fa-js js"></i> JavaScript</span>
-                <span><i class="fab fa-bootstrap bs"></i> Bootstrap</span>
-              </div>
-              <a
-                href="https://github.com/simiyu-samuel/frontend-hotel-management-system"
-                class="btn btn-primary mt-3"
-                >View on GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2: Prestashop Lipa Na Mpesa Payment Module -->
-        <div class="col-md-4 mb-4">
-          <div class="project-card h-100">
-            <img
-              src="img/prestashop.PNG"
-              alt="Prestashop Lipa Na Mpesa Payment Module"
-              class="project-img w-100"
-            />
-            <div class="project-content p-3">
-              <h3>Prestashop Lipa Na Mpesa Payment Module</h3>
-              <p>
-                An external Prestashop module enabling payments via Lipa Na
-                Mpesa using Kopokopo K2 API integration.
-              </p>
-              <div class="tech">
-                <span><i class="fab fa-php php"></i> PHP</span>
-                <span><i class="fab fa-smile-wink"></i> Smarty</span>
-                <span><i class="fab fa-js js"></i> JavaScript</span>
-                <span><i class="fab fa-bootstrap bs"></i> Bootstrap</span>
-              </div>
-              <a
-                href="https://github.com/simiyu-samuel/Prestashop-Lipa-Na-Mpesa-Module"
-                class="btn btn-primary mt-3"
-                >View on GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="project-card h-100">
-            <img src="img/chat.PNG" alt="" class="project-img w-100" />
-            <div class="project-content p-3">
-              <h3>LIVE CHAT ROOM</h3>
-              <p>
-                Simple, real-time chat application without relying on advanced
-                frameworks or libraries
-              </p>
-              <div class="tech">
-                <span><i class="fab fa-php"></i> PHP</span>
-                <span
-                  ><i class="fab fa-js"></i> JavaScript(XMLHttpRequest)</span
-                >
-              </div>
-              <a
-                href="https://github.com/simiyu-samuel/chat-room"
-                class="btn btn-primary mt-3"
-                >View on GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3: Waste Management System -->
-        <div class="col-md-4 mb-4">
-          <div class="project-card h-100">
-            <img
-              src="img/waste.PNG"
-              alt="Waste Management System"
-              class="project-img w-100"
-            />
-            <div class="project-content p-3">
-              <h3>Waste Management System</h3>
-              <p>
-                An intuitive dashboard with data visualization, predictive
-                analytics, and performance tracking for waste management
-                efficiency.
-              </p>
-              <div class="tech">
-                <span><i class="fab fa-laravel"></i> Laravel</span>
-                <span><i class="fab fa-js js"></i> JavaScript</span>
-                <span><i class="fab fa-bootstrap bs"></i> Bootstrap</span>
-              </div>
-              <a
-                href="hhttps://github.com/simiyu-samuel/waste-manage-ment-dashboard"
-                class="btn btn-primary mt-3"
-                >View on GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="project-card h-100">
-            <img src="img/serial.PNG" alt="" class="project-img w-100" />
-            <div class="project-content p-3">
-              <h3>SERIAL SMS READER</h3>
-              <p>
-                Python script designed to read, parse, and store SMS messages
-                containing M-Pesa transaction details. From a connected Modem
-              </p>
-              <div class="tech">
-                <span><i class="fab fa-python"></i> Python</span>
-                <span><i class="fab fa-mysql"></i> MySQL</span>
-              </div>
-              <a
-                href="https://github.com/simiyu-samuel/SERIAL-SMS-READER"
-                class="btn btn-primary mt-3"
-                >View on GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4: Pearl Training Institute -->
-        <div class="col-md-4 mb-4">
-          <div class="project-card h-100">
-            <img
-              src="img/staff-login.PNG"
-              alt="Pearl Training Institute Project"
-              class="project-img w-100"
-            />
-            <div class="project-content p-3">
-              <h3>Pearl Training Institute</h3>
-              <p>
-                A complete college website with student and staff portals,
-                featuring full functionality. Collaborated with Lewis and Frank.
-              </p>
-              <div class="tech">
-                <span><i class="fab fa-python"></i> Django</span>
-                <span><i class="fab fa-react"></i> React</span>
-                <span><i class="fab fa-css3-alt"></i> Tailwind CSS</span>
-              </div>
-              <a
-                href="https://github.com/simiyu-samuel/Pearl-Training-Institute"
-                class="btn btn-primary mt-3"
-                >View on GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="awards" class="container">
-      <h2 class="text-center mb-5">Awards</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="award-card">
-            <img src="img/tvet.png" alt="Award 2" class="award-img" />
-            <h3>National TVET Fair Gold Medalist</h3>
-            <p>IT Software Solutions for Business, 2024</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="award-card">
-            <img src="img/worldskills.png" alt="Award 1" class="award-img" />
-            <h3>Worldskills Kenya Gold Medalist</h3>
-            <p>IT Software Solutions for Business</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="award-card">
-            <img src="img/tvet.png" alt="Award 3" class="award-img" />
-            <h3>Regional TVET Fair Gold Medalist</h3>
-            <p>Website Design, 2024</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="experience-section">
-      <h2 class="section-title">Professional Experience</h2>
+    <section id="projects" class="my-5 experience-section">
+      <h2 class="section-title">Projects</h2>
       <div class="experience-container">
-        <!-- Icore Information Systems (Contract) -->
+        <!-- Project: Lines Genius -->
         <div
           class="experience-item"
-          data-detail="contributing to the design, development, and enhancement of enterprise systems including Point of Sale (POS), ERP, SACCO, and other MIS"
+          data-detail="Lines Genius is a creative initiative blending coding, humor, and innovation. It features programming videos, coding jokes, and showcases of innovative projects. Tech: HTML, CSS, JavaScript, Bootstrap"
         >
-          <h3>Software Developer</h3>
-          <h4>Icore Information Systems</h4>
-          <p>April 2025 - Present</p>
-        </div>
-        <!-- Icore Information Systems (Intern) -->
-        <div
-          class="experience-item"
-          data-detail="Collaborated on various projects, enhancing software solutions and debugging code as part of an agile team."
-        >
-          <h3>Software Developer Intern</h3>
-          <h4>Icore Information Systems</h4>
-          <p>Aug 2024 - Mar 2025</p>
-        </div>
-        <!-- Beyond Technologies (Web Master) -->
-        <div
-          class="experience-item"
-          data-detail="Managed and optimized websites for performance and SEO while ensuring user-friendly designs."
-        >
-          <h3>Web Master</h3>
-          <h4>Beyond Technologies</h4>
-          <p>Aprill 2024 - July 2024</p>
+          <h3>Lines Genius: Programming Fun & Innovation</h3>
+          <h4>Personal Project</h4>
+          <p>2023 - Present</p>
+          <a
+            class="btn btn-dark btn-sm mt-2"
+            href="https://github.com/simiyu-samuel/linesgenious"
+            target="_blank"
+            class="text-white"
+            >Github</a
+          >
         </div>
 
-        <!-- Freelance Web Developer -->
+        <!-- Project: Crash Game -->
         <div
           class="experience-item"
-          data-detail="Built custom websites and applications for clients, delivering solutions tailored to individual business needs."
+          data-detail="A real-time multiplayer betting game where players place bets, watch a multiplier increase, and cash out before the game crashes. Tech: Node.js, JavaScript, HTML, CSS"
         >
-          <h3>Web Developer</h3>
-          <h4>Freelance</h4>
-          <p>2019 - Present</p>
+          <h3>Crash Game</h3>
+          <h4>Personal Project</h4>
+          <p>2024</p>
+          <a
+            class="btn btn-dark btn-sm mt-2"
+            href="https://github.com/simiyu-samuel/crash-game"
+            target="_blank"
+            class="text-white"
+            >Github</a
+          >
+        </div>
+
+        <!-- Project: Hotel Management Frontend -->
+        <div
+          class="experience-item"
+          data-detail="A modern frontend hotel management system with a clean UI and interactive features. Tech: HTML, CSS, JavaScript, Bootstrap"
+        >
+          <h3>Frontend Hotel Management System</h3>
+          <h4>Client Project</h4>
+          <p>2024</p>
+          <a
+            class="btn btn-dark btn-sm mt-2"
+            href="https://github.com/simiyu-samuel/frontend-hotel-management-system"
+            target="_blank"
+            class="text-white"
+            >Github</a
+          >
+        </div>
+
+        <!-- Project: Prestashop Module -->
+        <div
+          class="experience-item"
+          data-detail="External Prestashop module for Lipa Na Mpesa payments using Kopokopo K2 API. Tech: PHP, Smarty, JavaScript, Bootstrap"
+        >
+          <h3>Prestashop Lipa Na Mpesa Module</h3>
+          <h4>Open Source</h4>
+          <p>2024</p>
+          <a
+            class="btn btn-dark btn-sm mt-2"
+            href="https://github.com/simiyu-samuel/Prestashop-Lipa-Na-Mpesa-Module"
+            target="_blank"
+            class="text-white"
+            >Github</a
+          >
+        </div>
+
+        <!-- Project: Live Chat Room -->
+        <div
+          class="experience-item"
+          data-detail="Simple, real-time PHP chat app using JavaScript and XMLHttpRequest without frameworks. Tech: PHP, JavaScript"
+        >
+          <h3>Live Chat Room</h3>
+          <h4>Personal Project</h4>
+          <p>2024</p>
+          <a
+            class="btn btn-dark btn-sm mt-2"
+            href="https://github.com/simiyu-samuel/chat-room"
+            target="_blank"
+            class="text-white"
+            >Github</a
+          >
+        </div>
+
+        <!-- Project: Waste Management Dashboard -->
+        <div
+          class="experience-item"
+          data-detail="Dashboard with predictive analytics and performance tracking for waste management. Tech: Laravel, JavaScript, Bootstrap"
+        >
+          <h3>Waste Management Dashboard</h3>
+          <h4>Capstone Project</h4>
+          <p>2024</p>
+          <a
+            class="btn btn-dark btn-sm mt-2"
+            href="https://github.com/simiyu-samuel/waste-manage-ment-dashboard"
+            target="_blank"
+            class="text-white"
+            >Github</a
+          >
+        </div>
+
+        <!-- Project: Serial SMS Reader -->
+        <div
+          class="experience-item"
+          data-detail="Python script to read and store M-Pesa transaction SMS from a connected modem. Tech: Python, MySQL"
+        >
+          <h3>Serial SMS Reader</h3>
+          <h4>Utility Script</h4>
+          <p>2024</p>
+          <a
+            class="btn btn-dark btn-sm mt-2"
+            href="https://github.com/simiyu-samuel/SERIAL-SMS-READER"
+            target="_blank"
+            class="text-white"
+            >Github</a
+          >
+        </div>
+
+        <!-- Project: Pearl Training Institute -->
+        <div
+          class="experience-item"
+          data-detail="Full college website with student/staff portals. Collaborated with Lewis and Frank. Tech: Django, React, Tailwind CSS"
+        >
+          <h3>Pearl Training Institute</h3>
+          <h4>Team Project</h4>
+          <p>2024</p>
+          <a
+            class="btn btn-dark btn-sm mt-2"
+            href="https://github.com/simiyu-samuel/Pearl-Training-Institute"
+            target="_blank"
+            class="text-white"
+            >Github</a
+          >
         </div>
       </div>
       <div class="experience-detail">
         <p class="detail-text"></p>
       </div>
     </section>
+
+    <section id="awards" class="container my-5">
+      <h2 class="text-center display-4 mb-5">Awards</h2>
+      <div class="row justify-content-center">
+        <!-- Award 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="award-card text-center shadow-sm p-4 rounded h-100">
+            <img
+              src="img/worldskills.png"
+              alt="Worldskills Kenya"
+              class="award-img mb-3 w-50"
+            />
+            <h4 class="fw-bold">Worldskills Kenya Gold Medalist</h4>
+            <p class="text-muted">IT Software Solutions for Business</p>
+          </div>
+        </div>
+
+        <!-- Award 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="award-card text-center shadow-sm p-4 rounded h-100">
+            <img
+              src="img/tvet.png"
+              alt="National TVET Fair"
+              class="award-img mb-3 w-50"
+            />
+            <h4 class="fw-bold">National TVET Fair Gold Medalist</h4>
+            <p class="text-muted">IT Software Solutions for Business, 2024</p>
+          </div>
+        </div>
+
+        <!-- Award 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="award-card text-center shadow-sm p-4 rounded h-100">
+            <img
+              src="img/tvet.png"
+              alt="Regional TVET Fair"
+              class="award-img mb-3 w-50"
+            />
+            <h4 class="fw-bold">Regional TVET Fair Gold Medalist</h4>
+            <p class="text-muted">Website Design, 2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience-section">
+      <h2 class="text-center display-4 mb-5">Professional Experience</h2>
+      <div class="row g-4">
+        <!-- Icore - Software Developer -->
+        <div class="col-md-6">
+          <div class="experience-item p-4 rounded shadow-sm h-100">
+            <h4 class="fw-bold mb-1">Software Developer</h4>
+            <h5 class="text-muted mb-2">Icore Information Systems</h5>
+            <p class="text-primary mb-1">April 2025 – Present</p>
+            <p class="text-muted small">
+              Contributing to the design, development, and enhancement of
+              enterprise systems including Point of Sale (POS), ERP, SACCO, and
+              other MIS.
+            </p>
+          </div>
+        </div>
+
+        <!-- Icore - Intern -->
+        <div class="col-md-6">
+          <div class="experience-item p-4 rounded shadow-sm h-100">
+            <h4 class="fw-bold mb-1">Software Developer Intern</h4>
+            <h5 class="text-muted mb-2">Icore Information Systems</h5>
+            <p class="text-primary mb-1">Aug 2024 – Mar 2025</p>
+            <p class="text-muted small">
+              Collaborated on various projects, enhancing software solutions and
+              debugging code as part of an agile team.
+            </p>
+          </div>
+        </div>
+
+        <!-- Beyond Technologies -->
+        <div class="col-md-6">
+          <div class="experience-item p-4 rounded shadow-sm h-100">
+            <h4 class="fw-bold mb-1">Web Master</h4>
+            <h5 class="text-muted mb-2">Beyond Technologies</h5>
+            <p class="text-primary mb-1">April 2024 – July 2024</p>
+            <p class="text-muted small">
+              Managed and optimized websites for performance and SEO while
+              ensuring user-friendly designs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Freelance -->
+        <div class="col-md-6">
+          <div class="experience-item p-4 rounded shadow-sm h-100">
+            <h4 class="fw-bold mb-1">Web Developer</h4>
+            <h5 class="text-muted mb-2">Freelance</h5>
+            <p class="text-primary mb-1">2019 – Present</p>
+            <p class="text-muted small">
+              Built custom websites and applications for clients, delivering
+              solutions tailored to individual business needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="container py-5">
       <h2 class="text-center mb-4 mt-4">Get in Touch</h2>
       <div
