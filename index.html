@@ -593,8 +593,15 @@
       </div>
     </section>
 
-    <section id="contact" class="container py-5">
-      <h2 class="text-center mb-4 mt-4">Get in Touch</h2>
+    <section id="contact" class="container py-5 position-relative">
+      <h2 class="text-center mb-4 mt-4">Let's Work Together</h2>
+
+      <p class="text-center mb-4 lead">
+        Whether you're interested in <strong>freelance services</strong>, want
+        to <strong>buy a digital product</strong>, or just have a question — I'm
+        here for it. Drop a message below, and I'll get back to you shortly!
+      </p>
+
       <div
         id="alert-message"
         class="alert alert-success alert-dismissible fade"
@@ -611,14 +618,15 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
+
+      <!-- Animated Background -->
       <div
         class="particles-background position-absolute w-100 h-100"
         id="particles-js3"
       ></div>
-      <!-- Animated Background -->
       <div class="contact-background d-flex"></div>
 
-      <form id="contact-form" class="p-4">
+      <form id="contact-form" class="p-4 bg-white rounded shadow-sm">
         <div class="form-group mb-3">
           <label for="name" class="form-label">Your Name</label>
           <input
@@ -629,6 +637,7 @@
           />
           <div class="invalid-feedback">Please enter your name.</div>
         </div>
+
         <div class="form-group mb-3">
           <label for="email" class="form-label">Your Email</label>
           <input
@@ -641,6 +650,20 @@
             Please enter a valid email address.
           </div>
         </div>
+
+        <div class="form-group mb-3">
+          <label for="subject" class="form-label">Reason for Contact</label>
+          <select class="form-control" id="subject">
+            <option value="" disabled selected>Select one</option>
+            <option value="freelance">Freelance Project Inquiry</option>
+            <option value="product">Buy a Digital Product</option>
+            <option value="general">General Question</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a reason for contact.
+          </div>
+        </div>
+
         <div class="form-group mb-3">
           <label for="message" class="form-label">Your Message</label>
           <textarea
@@ -660,21 +683,27 @@
         >
           Send Message
         </button>
+
         <!-- Social Media Links -->
         <div class="text-center mt-4">
           <a
             href="https://www.facebook.com/profile.php?id=100070854736869"
-            class="social-icon"
-            ><i class="fa fa-facebook"></i
-          ></a>
+            class="social-icon mx-2"
+          >
+            <i class="fa fa-facebook"></i>
+          </a>
           <a
             href="https://www.linkedin.com/in/samuel-simiyu-63270a236"
-            class="social-icon"
-            ><i class="fa fa-linkedin"></i
-          ></a>
-          <a href="https://www.github.com/simiyu-samuel" class="social-icon"
-            ><i class="fa fa-github"></i
-          ></a>
+            class="social-icon mx-2"
+          >
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.github.com/simiyu-samuel"
+            class="social-icon mx-2"
+          >
+            <i class="fa fa-github"></i>
+          </a>
         </div>
       </form>
     </section>
