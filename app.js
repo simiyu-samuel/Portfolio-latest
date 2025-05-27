@@ -75,10 +75,11 @@ function sendMail() {
 
       // If the form is valid, show the thank-you message
       if (isValid) {
+        const subject = "Subject: " + document.getElementById("subject").value;
         let params = {
           name: document.getElementById("name").value,
           email: document.getElementById("email").value,
-          message: document.getElementById("message").value,
+          message: subject + " " + document.getElementById("message").value,
         };
         emailjs.send("service_h3cwkks", "template_y07l3rh", params).then(
           function (response) {
