@@ -129,9 +129,9 @@ let indexA = 0;
 
 new Typed("#typing-effect", {
   strings: [
-    "Problem Solver",
-    "Critical Thinker",
-    "Innovator",
+    "🐘 Laravel tamer",
+    "React wrangler",
+    "WorldSkills Kenya champ 🏆",
     "Lifelong Learner",
   ],
   typeSpeed: 70,
