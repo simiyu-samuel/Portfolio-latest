@@ -83,10 +83,7 @@ function sendMail() {
         };
         emailjs.send("service_h3cwkks", "template_y07l3rh", params).then(
           function (response) {
-            showAlert(
-              "Thank you for reaching out! I'll get back to you soon.",
-              "success"
-            );
+            showAlert("Mesage sent. Success");
             document.getElementById("contact-form").reset();
           },
           function (error) {
