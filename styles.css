@@ -918,3 +918,36 @@ h2 {
 .card:hover {
   transform: scale(1.05);
 }
+/* Add this new style to your styles.css file */
+
+.new-portfolio-btn {
+  background: linear-gradient(45deg, #007bff, #0056b3); /* Eye-catching blue gradient */
+  color: white !important; /* Ensure text is white */
+  padding: 18px 35px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.new-portfolio-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 123, 255, 0.4);
+  background: linear-gradient(45deg, #0056b3, #007bff);
+}
+
+/* Optional: You can adjust the hero content styling if needed */
+#hero .hero-content {
+  z-index: 2;
+  padding: 2rem;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
